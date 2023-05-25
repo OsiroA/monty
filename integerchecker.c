@@ -1,4 +1,4 @@
-#include "header.h"
+#include "monty.h"
 
 /**
  * ifAnInteger - This function checks if a string represents an integer
