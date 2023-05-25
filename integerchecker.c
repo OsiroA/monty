@@ -11,11 +11,12 @@ int ifAnInteger(const char *inputString)
 		return (0);
 	if (*inputString == '+' || *inputString == '-')
 		++inputString;
-	while (*inoutString != '\0')
+	while (*inputString != '\0')
 	{
 		if (*inputString < '0' || *inputString > '9')
 			return (0);
 		++inputString;
 		return (1);
 	}
+	return (True)
 }
