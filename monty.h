@@ -2,7 +2,8 @@
 #define HEADER_H
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
+#include <stdbool.h>
 
 
 /**
@@ -37,7 +38,8 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-
+int ifAnInteger(const char *inputString);
+void pusher(int *stack, int *top, const char *argument, int lineNum);
 void printAll(const int *stack, int top);
 
 #endif
