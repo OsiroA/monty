@@ -1,4 +1,4 @@
-#include "header.h"
+#include "monty.h"
 /**
  * printAll - this function lrints all the elements of the stack
  * @stack: the stack array
