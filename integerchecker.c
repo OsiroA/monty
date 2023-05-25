@@ -18,5 +18,5 @@ int ifAnInteger(const char *inputString)
 		++inputString;
 		return (1);
 	}
-	return (True)
+	return (true);
 }
