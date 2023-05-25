@@ -1,4 +1,4 @@
-#include "header.h"
+#include "monty.h"
 /**
  * pusher - This function pushes an element unto a stack
  * @stack: The stack array
@@ -9,3 +9,10 @@
  */
 void pusher(int *stack, int *top, const char *argument, int lineNum)
 {
+	if (ifAnInteger(argument))
+	{
+		fprintf(stderr, "L%d: usage: push integer\n", lineNum);
+		exit(EXIT_FAILURE);
+	}
+	stack[++(*top)] = atoi(argument);
+}
